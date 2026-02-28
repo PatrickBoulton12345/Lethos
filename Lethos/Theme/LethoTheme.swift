@@ -29,10 +29,10 @@ extension UIColor {
 extension Color {
     // Backgrounds — adaptive
     static let lethosBlack = Color(UIColor { traits in
-        traits.userInterfaceStyle == .dark ? .black : .systemBackground
+        traits.userInterfaceStyle == .dark ? .black : UIColor(hex: "EBE3D0")
     })
     static let lethosCard = Color(UIColor { traits in
-        traits.userInterfaceStyle == .dark ? UIColor(hex: "1A1A1A") : .secondarySystemBackground
+        traits.userInterfaceStyle == .dark ? UIColor(hex: "1A1A1A") : .white
     })
     static let lethosCardSelected = Color(UIColor { traits in
         traits.userInterfaceStyle == .dark ? UIColor(hex: "0D1F17") : UIColor(hex: "E8F8F0")
