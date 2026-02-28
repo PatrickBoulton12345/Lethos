@@ -95,8 +95,8 @@ struct HomeView: View {
 
         return VStack(alignment: .leading, spacing: 12) {
             Text("Today's Workout")
-                .font(.system(size: 14, weight: .bold))
-                .foregroundColor(.lethosGreenAccent)
+                .font(LethoFont.headline(14))
+                .foregroundColor(.lethosPrimary)
                 .textCase(.uppercase)
 
             if let session = todaySession, session.isRestDay != true {
@@ -140,8 +140,8 @@ struct HomeView: View {
     private func goalCard(_ analysis: PhysiqueAnalysisResponse) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Your Goal")
-                .font(.system(size: 14, weight: .bold))
-                .foregroundColor(.lethosGreenAccent)
+                .font(LethoFont.headline(14))
+                .foregroundColor(.lethosPrimary)
                 .textCase(.uppercase)
 
             if let summary = analysis.physiqueSummary {
@@ -187,8 +187,8 @@ struct HomeView: View {
 
         return VStack(alignment: .leading, spacing: 12) {
             Text("This Week")
-                .font(.system(size: 14, weight: .bold))
-                .foregroundColor(.lethosGreenAccent)
+                .font(LethoFont.headline(14))
+                .foregroundColor(.lethosPrimary)
                 .textCase(.uppercase)
 
             HStack(spacing: 16) {

@@ -42,8 +42,8 @@ struct ProfileView: View {
     private var statsCard: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("YOUR STATS")
-                .font(.system(size: 12, weight: .bold))
-                .foregroundColor(.lethosGreenAccent)
+                .font(LethoFont.headline(14))
+                .foregroundColor(.lethosPrimary)
 
             LazyVGrid(columns: [
                 GridItem(.flexible()),
@@ -71,8 +71,8 @@ struct ProfileView: View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
                 Text("GOAL PHYSIQUE")
-                    .font(.system(size: 12, weight: .bold))
-                    .foregroundColor(.lethosGreenAccent)
+                    .font(LethoFont.headline(14))
+                    .foregroundColor(.lethosPrimary)
 
                 Spacer()
 
@@ -131,8 +131,8 @@ struct ProfileView: View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
                 Text("PROGRESS PHOTOS")
-                    .font(.system(size: 12, weight: .bold))
-                    .foregroundColor(.lethosGreenAccent)
+                    .font(LethoFont.headline(14))
+                    .foregroundColor(.lethosPrimary)
 
                 Spacer()
 

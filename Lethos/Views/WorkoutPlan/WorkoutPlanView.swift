@@ -137,8 +137,8 @@ private struct DaySection: View {
                         // Warmup
                         if let warmup = day.warmup, !warmup.isEmpty {
                             Text("WARMUP")
-                                .font(.system(size: 12, weight: .bold))
-                                .foregroundColor(.lethosFinePrint)
+                                .font(LethoFont.headline(14))
+                                .foregroundColor(.lethosPrimary)
 
                             ForEach(warmup) { exercise in
                                 Text("• \(exercise.exerciseName ?? "") — \(exercise.notes ?? "")")
@@ -157,8 +157,8 @@ private struct DaySection: View {
                         // Cooldown
                         if let cooldown = day.cooldown, !cooldown.isEmpty {
                             Text("COOLDOWN")
-                                .font(.system(size: 12, weight: .bold))
-                                .foregroundColor(.lethosFinePrint)
+                                .font(LethoFont.headline(14))
+                                .foregroundColor(.lethosPrimary)
                                 .padding(.top, 8)
 
                             ForEach(cooldown) { exercise in

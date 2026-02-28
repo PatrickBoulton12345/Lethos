@@ -25,8 +25,8 @@ struct WeeklyCheckInView: View {
                     // Photo
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Progress Photo")
-                            .font(.system(size: 14, weight: .bold))
-                            .foregroundColor(.lethosGreenAccent)
+                            .font(LethoFont.headline(14))
+                            .foregroundColor(.lethosPrimary)
 
                         PhotosPicker(selection: $photoItem, matching: .images) {
                             if let data = photoData, let uiImage = UIImage(data: data) {
@@ -130,8 +130,8 @@ struct WeeklyCheckInView: View {
     private func fieldSection<Content: View>(title: String, @ViewBuilder content: () -> Content) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(title)
-                .font(.system(size: 14, weight: .bold))
-                .foregroundColor(.lethosGreenAccent)
+                .font(LethoFont.headline(14))
+                .foregroundColor(.lethosPrimary)
             content()
         }
     }
@@ -153,8 +153,8 @@ struct WeeklyCheckInView: View {
             if let wins = result.wins, !wins.isEmpty {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Wins")
-                        .font(.system(size: 12, weight: .bold))
-                        .foregroundColor(.lethosGreenAccent)
+                        .font(LethoFont.headline(14))
+                        .foregroundColor(.lethosPrimary)
                     ForEach(wins, id: \.self) { win in
                         HStack(alignment: .top, spacing: 8) {
                             Image(systemName: "checkmark.circle.fill")
