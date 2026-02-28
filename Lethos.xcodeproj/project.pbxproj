@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A43682B9B7FA77E421C739C /* OnboardingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCC055ADBBFFF83B788F78A /* OnboardingContainerView.swift */; };
+		0E131B7BD0DFC25B7769F132 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970457C9D9D8B63053C1795 /* OpenAIService.swift */; };
+		14D121CD7D7EE62294DA28BC /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214ECB23EB23744A789632F1 /* Config.swift */; };
+		2058A7EE294C4C809B799A48 /* WorkoutPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D0D822E27A6D911D609864 /* WorkoutPlanView.swift */; };
+		2EAC453013B819DB9A8D9115 /* LethosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16261D2F41BADE46057ADCBD /* LethosApp.swift */; };
+		34DAB0BFEA0D54011059037D /* DietaryRequirementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF9BD20CAA92950610FCCC /* DietaryRequirementsView.swift */; };
+		3C53603A33BF551F73CFAA1D /* ExpandableBuildCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC26FA03B049D61737C4AAE /* ExpandableBuildCard.swift */; };
+		3C5FEB6B3A6DBFDB30359BC0 /* OnboardingStepConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D334C5B780DBE68F8830C8 /* OnboardingStepConfig.swift */; };
+		45D51F9A8870F26BEC332A22 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB8F7A0E24EAA228E903A95 /* LoadingView.swift */; };
+		4630BC1A9E23BE3F30942838 /* GenderSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA697318099759D8222341 /* GenderSelectionView.swift */; };
+		47905B393F1C50CAF9BBCB3C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8DE96FBE523DAB71A193B5 /* MainTabView.swift */; };
+		4B3DFE850A6169443B590DFA /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A51BF59179C5AEEF729A6D /* GradientButton.swift */; };
+		4E6C62AF7F0AAAB2D236E802 /* LockedOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23886C8B7E86588D031BE421 /* LockedOverlay.swift */; };
+		544DADA0AD267E6F9736B1C6 /* ClashDisplay-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 062F6C2F03EFCCC88487FFB6 /* ClashDisplay-Medium.otf */; };
+		70ABC7B03A0684476B4E36CD /* ClashDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8D1D8FF5A0404BD8B499E50 /* ClashDisplay-Semibold.otf */; };
+		7A07473E37F7EE747BEE9176 /* TellUsAboutYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D5A76629B6763CEA4C8950 /* TellUsAboutYouView.swift */; };
+		82429617EDA3A4E2BC3AF8E4 /* StepTickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141EFFCB77F0672C6E2AF50 /* StepTickerView.swift */; };
+		845A0FB242625B71F613D241 /* PageDotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E459163EE9D727717B5AE56B /* PageDotsView.swift */; };
+		8947985BEE36E69992EDCD6D /* HeightEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B19C1241A8A272A9CAAF24 /* HeightEntryView.swift */; };
+		8BCD380D8E254007676CC202 /* OnboardingStepWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C9B9CA397C0BC0B6163FAA /* OnboardingStepWrapper.swift */; };
+		984F442CCDB830DCC2238532 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C31FC3B5FCCDCF58DFDA96 /* PaywallView.swift */; };
+		A43AE45AF38FACD82584A8FC /* BuildSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D644FCD1CFE82895888F9190 /* BuildSelectionView.swift */; };
+		A5542E95F648B284C3CDD50E /* PhotoResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDB9851C53B2B0ECE6ECAED /* PhotoResultView.swift */; };
+		AC399A5E883A01959C69E478 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D426B81346D1943EAE246B41 /* ProfileView.swift */; };
+		ADA69FE8388715E8CC156D7B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795F87E4943E98793BC2FA6F /* HomeView.swift */; };
+		ADDDFC689D602B13D43A0ED0 /* GoalPhysiqueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74718E9BA446F59F22CDF12E /* GoalPhysiqueView.swift */; };
+		AF0890F3ABF9006AD9610D20 /* WeeklyCheckInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F61566B2E210391F87AA01 /* WeeklyCheckInView.swift */; };
+		B0D87872E12F6655F24C4CBE /* LethoTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA3A2F5BACC9A4220A82B7B /* LethoTheme.swift */; };
+		B339CC3348CE898F0CC83A64 /* GreenGlowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FCEB53E7060B68D1CABA3E /* GreenGlowModifier.swift */; };
+		B78911B835C5869CCFE5DBFF /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC1128688BD2713A7498EC0 /* Profile.swift */; };
+		B92FEEEF4D49BFC1E2AFCB8B /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 31C25E7AA61E2FEECE2B4A0A /* Fonts */; };
+		BF4063585EF4758307FB4E1C /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAE858CE551711013333E /* AppViewModel.swift */; };
+		C942C4E279C7CA687BAB4720 /* OnboardingContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12321EDBD0889B0E1BA94431 /* OnboardingContinueButton.swift */; };
+		D73F1BAD41DA11D917C2E310 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFE6F7CC22954F23F2E6FB3 /* OnboardingViewModel.swift */; };
+		DAB4CDD0B064B12A41A53E52 /* AgeEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A3A50D30FC5DBDDA66FB5 /* AgeEntryView.swift */; };
+		E04A8C02134E23508712EAFA /* WeightEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339094A5A3A93A9C0D9CAFCB /* WeightEntryView.swift */; };
+		F7C4E081E0B47A806CF1478E /* StoredModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F73D23E6FD4C40F97223EF /* StoredModels.swift */; };
+		F9C88F7BF05619D4952BB039 /* AIResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87C752BDF02540B05B0CFA /* AIResponses.swift */; };
+		FC4967EDDBC77A58FC451467 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B45312A35FF23D141BD8D3 /* WelcomeView.swift */; };
+		FC6D6D92A06BDE04C08192C2 /* GlowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D61FBBF6536D2B80433D98 /* GlowCard.swift */; };
+		FFA3163CEE0EF1679AF278E1 /* SupabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4760ACAB72EBDDC0E1852956 /* SupabaseService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00DA697318099759D8222341 /* GenderSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectionView.swift; sourceTree = "<group>"; };
+		062F6C2F03EFCCC88487FFB6 /* ClashDisplay-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClashDisplay-Medium.otf"; sourceTree = "<group>"; };
+		08B19C1241A8A272A9CAAF24 /* HeightEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightEntryView.swift; sourceTree = "<group>"; };
+		12321EDBD0889B0E1BA94431 /* OnboardingContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContinueButton.swift; sourceTree = "<group>"; };
+		16261D2F41BADE46057ADCBD /* LethosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LethosApp.swift; sourceTree = "<group>"; };
+		1970457C9D9D8B63053C1795 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		1FA3A2F5BACC9A4220A82B7B /* LethoTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LethoTheme.swift; sourceTree = "<group>"; };
+		214ECB23EB23744A789632F1 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		23886C8B7E86588D031BE421 /* LockedOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedOverlay.swift; sourceTree = "<group>"; };
+		2AC1128688BD2713A7498EC0 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		31C25E7AA61E2FEECE2B4A0A /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = Lethos/Fonts; sourceTree = SOURCE_ROOT; };
+		339094A5A3A93A9C0D9CAFCB /* WeightEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightEntryView.swift; sourceTree = "<group>"; };
+		36C9B9CA397C0BC0B6163FAA /* OnboardingStepWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStepWrapper.swift; sourceTree = "<group>"; };
+		46D0D822E27A6D911D609864 /* WorkoutPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPlanView.swift; sourceTree = "<group>"; };
+		4760ACAB72EBDDC0E1852956 /* SupabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseService.swift; sourceTree = "<group>"; };
+		47C31FC3B5FCCDCF58DFDA96 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		4CB8F7A0E24EAA228E903A95 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		59F73D23E6FD4C40F97223EF /* StoredModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredModels.swift; sourceTree = "<group>"; };
+		5D8DE96FBE523DAB71A193B5 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		62D5A76629B6763CEA4C8950 /* TellUsAboutYouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TellUsAboutYouView.swift; sourceTree = "<group>"; };
+		71A51BF59179C5AEEF729A6D /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		72FCEB53E7060B68D1CABA3E /* GreenGlowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenGlowModifier.swift; sourceTree = "<group>"; };
+		73AF9BD20CAA92950610FCCC /* DietaryRequirementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietaryRequirementsView.swift; sourceTree = "<group>"; };
+		73F61566B2E210391F87AA01 /* WeeklyCheckInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCheckInView.swift; sourceTree = "<group>"; };
+		74718E9BA446F59F22CDF12E /* GoalPhysiqueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalPhysiqueView.swift; sourceTree = "<group>"; };
+		795F87E4943E98793BC2FA6F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8141EFFCB77F0672C6E2AF50 /* StepTickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTickerView.swift; sourceTree = "<group>"; };
+		842C47F9C34B19C1FA6E0205 /* Lethos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lethos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CFE6F7CC22954F23F2E6FB3 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		8FC26FA03B049D61737C4AAE /* ExpandableBuildCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableBuildCard.swift; sourceTree = "<group>"; };
+		90D61FBBF6536D2B80433D98 /* GlowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowCard.swift; sourceTree = "<group>"; };
+		95D334C5B780DBE68F8830C8 /* OnboardingStepConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStepConfig.swift; sourceTree = "<group>"; };
+		BFDB9851C53B2B0ECE6ECAED /* PhotoResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoResultView.swift; sourceTree = "<group>"; };
+		C8D1D8FF5A0404BD8B499E50 /* ClashDisplay-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClashDisplay-Semibold.otf"; sourceTree = "<group>"; };
+		D426B81346D1943EAE246B41 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D644FCD1CFE82895888F9190 /* BuildSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildSelectionView.swift; sourceTree = "<group>"; };
+		DBCC055ADBBFFF83B788F78A /* OnboardingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerView.swift; sourceTree = "<group>"; };
+		DC87C752BDF02540B05B0CFA /* AIResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIResponses.swift; sourceTree = "<group>"; };
+		E459163EE9D727717B5AE56B /* PageDotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDotsView.swift; sourceTree = "<group>"; };
+		F2B45312A35FF23D141BD8D3 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		FA5A3A50D30FC5DBDDA66FB5 /* AgeEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeEntryView.swift; sourceTree = "<group>"; };
+		FABCAE858CE551711013333E /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		17A8EE8628CB15AE682D09C7 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				214ECB23EB23744A789632F1 /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		195CD2AABB0E7B53FE58AB87 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1970457C9D9D8B63053C1795 /* OpenAIService.swift */,
+				4760ACAB72EBDDC0E1852956 /* SupabaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		28BC4179ADBDDD42A1FE4BB8 /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				47C31FC3B5FCCDCF58DFDA96 /* PaywallView.swift */,
+			);
+			path = Paywall;
+			sourceTree = "<group>";
+		};
+		2B2FEA4F0C0030AD9218C048 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8FC26FA03B049D61737C4AAE /* ExpandableBuildCard.swift */,
+				90D61FBBF6536D2B80433D98 /* GlowCard.swift */,
+				71A51BF59179C5AEEF729A6D /* GradientButton.swift */,
+				72FCEB53E7060B68D1CABA3E /* GreenGlowModifier.swift */,
+				4CB8F7A0E24EAA228E903A95 /* LoadingView.swift */,
+				23886C8B7E86588D031BE421 /* LockedOverlay.swift */,
+				12321EDBD0889B0E1BA94431 /* OnboardingContinueButton.swift */,
+				E459163EE9D727717B5AE56B /* PageDotsView.swift */,
+				8141EFFCB77F0672C6E2AF50 /* StepTickerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		43573E6DD8DEDF608482BB44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC87C752BDF02540B05B0CFA /* AIResponses.swift */,
+				2AC1128688BD2713A7498EC0 /* Profile.swift */,
+				59F73D23E6FD4C40F97223EF /* StoredModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4597F509A02B0B9B6F1DCEC4 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				FA5A3A50D30FC5DBDDA66FB5 /* AgeEntryView.swift */,
+				D644FCD1CFE82895888F9190 /* BuildSelectionView.swift */,
+				73AF9BD20CAA92950610FCCC /* DietaryRequirementsView.swift */,
+				00DA697318099759D8222341 /* GenderSelectionView.swift */,
+				74718E9BA446F59F22CDF12E /* GoalPhysiqueView.swift */,
+				08B19C1241A8A272A9CAAF24 /* HeightEntryView.swift */,
+				DBCC055ADBBFFF83B788F78A /* OnboardingContainerView.swift */,
+				95D334C5B780DBE68F8830C8 /* OnboardingStepConfig.swift */,
+				36C9B9CA397C0BC0B6163FAA /* OnboardingStepWrapper.swift */,
+				8CFE6F7CC22954F23F2E6FB3 /* OnboardingViewModel.swift */,
+				BFDB9851C53B2B0ECE6ECAED /* PhotoResultView.swift */,
+				62D5A76629B6763CEA4C8950 /* TellUsAboutYouView.swift */,
+				339094A5A3A93A9C0D9CAFCB /* WeightEntryView.swift */,
+				F2B45312A35FF23D141BD8D3 /* WelcomeView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		5EE9AA7F7BAB2C24C62EF99D = {
+			isa = PBXGroup;
+			children = (
+				AAAD17E2645759A96D2282A5 /* Lethos */,
+				FB825C8E459A4DE7CC7A3BFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83DD6212C4A0EF55434271DC /* WorkoutPlan */ = {
+			isa = PBXGroup;
+			children = (
+				46D0D822E27A6D911D609864 /* WorkoutPlanView.swift */,
+			);
+			path = WorkoutPlan;
+			sourceTree = "<group>";
+		};
+		84CEE0A4C40895EE2F3264D3 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				1FA3A2F5BACC9A4220A82B7B /* LethoTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		877F592BE8A75026CA3DAE0D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				795F87E4943E98793BC2FA6F /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A99908A30D9A4B81A2D566EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				877F592BE8A75026CA3DAE0D /* Home */,
+				4597F509A02B0B9B6F1DCEC4 /* Onboarding */,
+				28BC4179ADBDDD42A1FE4BB8 /* Paywall */,
+				EC763DFB4DB4BFAC77A2E8D0 /* Profile */,
+				83DD6212C4A0EF55434271DC /* WorkoutPlan */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAAD17E2645759A96D2282A5 /* Lethos */ = {
+			isa = PBXGroup;
+			children = (
+				31C25E7AA61E2FEECE2B4A0A /* Fonts */,
+				F0E0E2D38D1DD762BFD53998 /* App */,
+				2B2FEA4F0C0030AD9218C048 /* Components */,
+				17A8EE8628CB15AE682D09C7 /* Config */,
+				CAA328F6AE5BF10DCA46700A /* Fonts */,
+				43573E6DD8DEDF608482BB44 /* Models */,
+				195CD2AABB0E7B53FE58AB87 /* Services */,
+				84CEE0A4C40895EE2F3264D3 /* Theme */,
+				A99908A30D9A4B81A2D566EE /* Views */,
+			);
+			path = Lethos;
+			sourceTree = "<group>";
+		};
+		CAA328F6AE5BF10DCA46700A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				062F6C2F03EFCCC88487FFB6 /* ClashDisplay-Medium.otf */,
+				C8D1D8FF5A0404BD8B499E50 /* ClashDisplay-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EC763DFB4DB4BFAC77A2E8D0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D426B81346D1943EAE246B41 /* ProfileView.swift */,
+				73F61566B2E210391F87AA01 /* WeeklyCheckInView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F0E0E2D38D1DD762BFD53998 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FABCAE858CE551711013333E /* AppViewModel.swift */,
+				16261D2F41BADE46057ADCBD /* LethosApp.swift */,
+				5D8DE96FBE523DAB71A193B5 /* MainTabView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FB825C8E459A4DE7CC7A3BFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				842C47F9C34B19C1FA6E0205 /* Lethos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F802865FE83B86608594E2FE /* Lethos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA97B6AFA8BF310459C2461E /* Build configuration list for PBXNativeTarget "Lethos" */;
+			buildPhases = (
+				77761BCE2ABF1C8C698098A3 /* Sources */,
+				A44C354A13E4FDA81F58E53E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lethos;
+			packageProductDependencies = (
+			);
+			productName = Lethos;
+			productReference = 842C47F9C34B19C1FA6E0205 /* Lethos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE838F2AEBAFB0AED94D0CA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = BBA40E7B1F79E22563A98CA2 /* Build configuration list for PBXProject "Lethos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5EE9AA7F7BAB2C24C62EF99D;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F802865FE83B86608594E2FE /* Lethos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A44C354A13E4FDA81F58E53E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544DADA0AD267E6F9736B1C6 /* ClashDisplay-Medium.otf in Resources */,
+				70ABC7B03A0684476B4E36CD /* ClashDisplay-Semibold.otf in Resources */,
+				B92FEEEF4D49BFC1E2AFCB8B /* Fonts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77761BCE2ABF1C8C698098A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9C88F7BF05619D4952BB039 /* AIResponses.swift in Sources */,
+				DAB4CDD0B064B12A41A53E52 /* AgeEntryView.swift in Sources */,
+				BF4063585EF4758307FB4E1C /* AppViewModel.swift in Sources */,
+				A43AE45AF38FACD82584A8FC /* BuildSelectionView.swift in Sources */,
+				14D121CD7D7EE62294DA28BC /* Config.swift in Sources */,
+				34DAB0BFEA0D54011059037D /* DietaryRequirementsView.swift in Sources */,
+				3C53603A33BF551F73CFAA1D /* ExpandableBuildCard.swift in Sources */,
+				4630BC1A9E23BE3F30942838 /* GenderSelectionView.swift in Sources */,
+				FC6D6D92A06BDE04C08192C2 /* GlowCard.swift in Sources */,
+				ADDDFC689D602B13D43A0ED0 /* GoalPhysiqueView.swift in Sources */,
+				4B3DFE850A6169443B590DFA /* GradientButton.swift in Sources */,
+				B339CC3348CE898F0CC83A64 /* GreenGlowModifier.swift in Sources */,
+				8947985BEE36E69992EDCD6D /* HeightEntryView.swift in Sources */,
+				ADA69FE8388715E8CC156D7B /* HomeView.swift in Sources */,
+				B0D87872E12F6655F24C4CBE /* LethoTheme.swift in Sources */,
+				2EAC453013B819DB9A8D9115 /* LethosApp.swift in Sources */,
+				45D51F9A8870F26BEC332A22 /* LoadingView.swift in Sources */,
+				4E6C62AF7F0AAAB2D236E802 /* LockedOverlay.swift in Sources */,
+				47905B393F1C50CAF9BBCB3C /* MainTabView.swift in Sources */,
+				0A43682B9B7FA77E421C739C /* OnboardingContainerView.swift in Sources */,
+				C942C4E279C7CA687BAB4720 /* OnboardingContinueButton.swift in Sources */,
+				3C5FEB6B3A6DBFDB30359BC0 /* OnboardingStepConfig.swift in Sources */,
+				8BCD380D8E254007676CC202 /* OnboardingStepWrapper.swift in Sources */,
+				D73F1BAD41DA11D917C2E310 /* OnboardingViewModel.swift in Sources */,
+				0E131B7BD0DFC25B7769F132 /* OpenAIService.swift in Sources */,
+				845A0FB242625B71F613D241 /* PageDotsView.swift in Sources */,
+				984F442CCDB830DCC2238532 /* PaywallView.swift in Sources */,
+				A5542E95F648B284C3CDD50E /* PhotoResultView.swift in Sources */,
+				B78911B835C5869CCFE5DBFF /* Profile.swift in Sources */,
+				AC399A5E883A01959C69E478 /* ProfileView.swift in Sources */,
+				82429617EDA3A4E2BC3AF8E4 /* StepTickerView.swift in Sources */,
+				F7C4E081E0B47A806CF1478E /* StoredModels.swift in Sources */,
+				FFA3163CEE0EF1679AF278E1 /* SupabaseService.swift in Sources */,
+				7A07473E37F7EE747BEE9176 /* TellUsAboutYouView.swift in Sources */,
+				AF0890F3ABF9006AD9610D20 /* WeeklyCheckInView.swift in Sources */,
+				E04A8C02134E23508712EAFA /* WeightEntryView.swift in Sources */,
+				FC4967EDDBC77A58FC451467 /* WelcomeView.swift in Sources */,
+				2058A7EE294C4C809B799A48 /* WorkoutPlanView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		096D32901C1FD46573A88FE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = SAW7947VW2;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Lethos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lethos.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1661F5DD75E6DA88654F734A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Lethos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		93BACE8676AA90C871D92E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Lethos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CBB1BD2F8FF4E1C2D231A271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = SAW7947VW2;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Lethos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lethos.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBA40E7B1F79E22563A98CA2 /* Build configuration list for PBXProject "Lethos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1661F5DD75E6DA88654F734A /* Debug */,
+				93BACE8676AA90C871D92E18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EA97B6AFA8BF310459C2461E /* Build configuration list for PBXNativeTarget "Lethos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB1BD2F8FF4E1C2D231A271 /* Debug */,
+				096D32901C1FD46573A88FE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE838F2AEBAFB0AED94D0CA6 /* Project object */;
+}
