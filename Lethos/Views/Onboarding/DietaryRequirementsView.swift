@@ -7,7 +7,7 @@ struct DietaryRequirementsView: View {
         VStack(spacing: 20) {
             Text("Dietary requirements")
                 .font(LethoFont.headline(28))
-                .foregroundColor(.white)
+                .foregroundColor(.lethosPrimary)
                 .padding(.top, 8)
 
             Text("Select all that apply")
@@ -24,12 +24,12 @@ struct DietaryRequirementsView: View {
                                 VStack(alignment: .leading, spacing: 8) {
                                     Text(req.displayName)
                                         .font(LethoFont.headline(18))
-                                        .foregroundColor(.white)
+                                        .foregroundColor(.lethosPrimary)
 
                                     if req == .other && viewModel.selectedDietary.contains(.other) {
                                         TextField("Tell us more...", text: $viewModel.otherDietaryText)
                                             .font(LethoFont.body(15))
-                                            .foregroundColor(.white)
+                                            .foregroundColor(.lethosPrimary)
                                             .padding(12)
                                             .background(Color.lethosBlack)
                                             .clipShape(RoundedRectangle(cornerRadius: 8))

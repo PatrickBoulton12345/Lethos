@@ -11,7 +11,7 @@ struct TellUsAboutYouView: View {
 
             Text("Tell us about you")
                 .font(LethoFont.headline())
-                .foregroundColor(.white)
+                .foregroundColor(.lethosPrimary)
 
             VStack(spacing: 16) {
                 PhotosPicker(selection: $selectedItem, matching: .images) {
@@ -64,7 +64,7 @@ struct TellUsAboutYouView: View {
                 HStack {
                     Text(title)
                         .font(LethoFont.headline(18))
-                        .foregroundColor(.white)
+                        .foregroundColor(.lethosPrimary)
 
                     if let badge = badge {
                         Text(badge)

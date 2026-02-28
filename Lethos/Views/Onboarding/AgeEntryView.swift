@@ -10,11 +10,11 @@ struct AgeEntryView: View {
 
             Text("What's your age?")
                 .font(LethoFont.headline(28))
-                .foregroundColor(.white)
+                .foregroundColor(.lethosPrimary)
 
             TextField("25", text: $viewModel.age)
                 .font(.system(size: 48, weight: .bold))
-                .foregroundColor(.white)
+                .foregroundColor(.lethosPrimary)
                 .keyboardType(.numberPad)
                 .multilineTextAlignment(.center)
                 .focused($isFocused)

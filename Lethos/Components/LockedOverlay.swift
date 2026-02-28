@@ -14,7 +14,7 @@ struct LockedOverlay: View {
 
                 Text("Upgrade to PRO")
                     .font(LethoFont.headline(24))
-                    .foregroundColor(.white)
+                    .foregroundColor(.lethosPrimary)
 
                 Text("Unlock your personalised plan")
                     .font(LethoFont.body())

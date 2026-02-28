@@ -15,7 +15,7 @@ struct PaywallView: View {
                 VStack(spacing: 4) {
                     Text("To see your full")
                         .font(LethoFont.headline(28))
-                        .foregroundColor(.white)
+                        .foregroundColor(.lethosPrimary)
 
                     Text("PERSONALISED")
                         .font(.system(size: 34, weight: .bold).italic())
@@ -23,7 +23,7 @@ struct PaywallView: View {
 
                     Text("workout plan")
                         .font(LethoFont.headline(28))
-                        .foregroundColor(.white)
+                        .foregroundColor(.lethosPrimary)
                 }
                 .padding(.top, 40)
 
@@ -46,7 +46,7 @@ struct PaywallView: View {
                                 VStack(alignment: .leading, spacing: 4) {
                                     Text("Monthly")
                                         .font(.system(size: 18, weight: .bold))
-                                        .foregroundColor(.white)
+                                        .foregroundColor(.lethosPrimary)
                                     Text("£7.99/month")
                                         .font(LethoFont.body())
                                         .foregroundColor(.lethosSecondary)
@@ -70,7 +70,7 @@ struct PaywallView: View {
                                 VStack(alignment: .leading, spacing: 4) {
                                     Text("Yearly")
                                         .font(.system(size: 18, weight: .bold))
-                                        .foregroundColor(.white)
+                                        .foregroundColor(.lethosPrimary)
                                     Text("£80/year")
                                         .font(LethoFont.body())
                                         .foregroundColor(.lethosSecondary)
@@ -149,7 +149,7 @@ private struct FeatureBullet: View {
 
             Text(text)
                 .font(LethoFont.body())
-                .foregroundColor(.white)
+                .foregroundColor(.lethosPrimary)
         }
     }
 }

@@ -35,7 +35,7 @@ struct LoadingView: View {
             VStack(spacing: 12) {
                 Text(title)
                     .font(LethoFont.headline(24))
-                    .foregroundColor(.white)
+                    .foregroundColor(.lethosPrimary)
 
                 Text(subtitle)
                     .font(LethoFont.body())

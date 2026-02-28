@@ -13,7 +13,7 @@ struct ExpandableBuildCard: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text(bodyType.displayName)
                     .font(LethoFont.headline(18))
-                    .foregroundColor(.white)
+                    .foregroundColor(.lethosPrimary)
 
                 if isExpanded && allowExpand {
                     Text(bodyType.description)

@@ -10,7 +10,7 @@ struct HomeView: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Hey \(appViewModel.profile.email?.components(separatedBy: "@").first ?? "there")")
                         .font(LethoFont.headline(28))
-                        .foregroundColor(.white)
+                        .foregroundColor(.lethosPrimary)
 
                     Text(dateString)
                         .font(LethoFont.body(15))
@@ -102,7 +102,7 @@ struct HomeView: View {
             if let session = todaySession, session.isRestDay != true {
                 Text(session.sessionName ?? "Training Day")
                     .font(LethoFont.headline(22))
-                    .foregroundColor(.white)
+                    .foregroundColor(.lethosPrimary)
 
                 HStack(spacing: 16) {
                     Label("\(session.exercises?.count ?? 0) exercises", systemImage: "dumbbell.fill")
@@ -124,7 +124,7 @@ struct HomeView: View {
             } else {
                 Text("Rest Day")
                     .font(LethoFont.headline(22))
-                    .foregroundColor(.white)
+                    .foregroundColor(.lethosPrimary)
 
                 Text(todaySession?.description ?? "Light walking, stretching, or foam rolling")
                     .font(LethoFont.body(15))
@@ -166,7 +166,7 @@ struct HomeView: View {
                     VStack(spacing: 4) {
                         Text("\(timeline.estimatedMonthsMinimum ?? 0)-\(timeline.estimatedMonthsMaximum ?? 0)")
                             .font(LethoFont.headline(28))
-                            .foregroundColor(.white)
+                            .foregroundColor(.lethosPrimary)
                         Text("months")
                             .font(LethoFont.body(13))
                             .foregroundColor(.lethosFinePrint)
@@ -203,13 +203,13 @@ struct HomeView: View {
                         .rotationEffect(.degrees(-90))
                     Text("\(completed)/\(planned)")
                         .font(.system(size: 14, weight: .bold))
-                        .foregroundColor(.white)
+                        .foregroundColor(.lethosPrimary)
                 }
 
                 VStack(alignment: .leading, spacing: 4) {
                     Text("\(completed) of \(planned) workouts done")
                         .font(LethoFont.body())
-                        .foregroundColor(.white)
+                        .foregroundColor(.lethosPrimary)
 
                     Text(completed >= planned ? "Great work this week!" : "Keep going!")
                         .font(LethoFont.body(14))

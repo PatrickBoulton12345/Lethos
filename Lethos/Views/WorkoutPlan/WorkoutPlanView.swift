@@ -13,7 +13,7 @@ struct WorkoutPlanView: View {
                         VStack(alignment: .leading, spacing: 8) {
                             Text(overview.planName ?? "Your Plan")
                                 .font(LethoFont.headline(28))
-                                .foregroundColor(.white)
+                                .foregroundColor(.lethosPrimary)
 
                             Text(overview.trainingSplit ?? "")
                                 .font(LethoFont.body(15))
@@ -30,7 +30,7 @@ struct WorkoutPlanView: View {
                     } else {
                         Text("Workout Plan")
                             .font(LethoFont.headline(28))
-                            .foregroundColor(.white)
+                            .foregroundColor(.lethosPrimary)
                             .padding(.top, 20)
                     }
 
@@ -93,7 +93,7 @@ private struct DaySection: View {
                     VStack(alignment: .leading, spacing: 2) {
                         Text(day.dayLabel ?? "Day \(day.day ?? 0)")
                             .font(.system(size: 16, weight: .bold))
-                            .foregroundColor(.white)
+                            .foregroundColor(.lethosPrimary)
 
                         if day.isRestDay == true {
                             Text("Rest Day")
@@ -194,7 +194,7 @@ private struct ExerciseRow: View {
             HStack {
                 Text(exercise.exerciseName ?? "Exercise")
                     .font(.system(size: 16, weight: .bold))
-                    .foregroundColor(.white)
+                    .foregroundColor(.lethosPrimary)
 
                 Spacer()
 

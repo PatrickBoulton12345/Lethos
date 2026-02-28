@@ -9,7 +9,7 @@ struct GenderSelectionView: View {
 
             Text("What's your gender?")
                 .font(LethoFont.headline(28))
-                .foregroundColor(.white)
+                .foregroundColor(.lethosPrimary)
 
             VStack(spacing: 12) {
                 ForEach(Gender.allCases) { gender in
@@ -19,7 +19,7 @@ struct GenderSelectionView: View {
                         GlowCard(isSelected: viewModel.selectedGender == gender) {
                             Text(gender.displayName)
                                 .font(LethoFont.headline(18))
-                                .foregroundColor(.white)
+                                .foregroundColor(.lethosPrimary)
                                 .frame(maxWidth: .infinity)
                         }
                     }

@@ -40,9 +40,7 @@
     <array>
         <string>UIInterfaceOrientationPortrait</string>
     </array>
-    <key>UIUserInterfaceStyle</key>
-    <string>Dark</string>
-    <key>UIAppFonts</key>
+<key>UIAppFonts</key>
     <array>
         <string>ClashDisplay-Semibold.otf</string>
         <string>ClashDisplay-Medium.otf</string>

@@ -12,7 +12,7 @@ struct GoalPhysiqueView: View {
             VStack(spacing: 12) {
                 Text("Now show us your goal")
                     .font(LethoFont.headline(28))
-                    .foregroundColor(.white)
+                    .foregroundColor(.lethosPrimary)
 
                 Text("Upload a photo of the physique you want to achieve")
                     .font(LethoFont.body(15))

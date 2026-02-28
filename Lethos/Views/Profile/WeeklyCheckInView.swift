@@ -20,7 +20,7 @@ struct WeeklyCheckInView: View {
                 VStack(alignment: .leading, spacing: 24) {
                     Text("Weekly Check-in")
                         .font(LethoFont.headline(28))
-                        .foregroundColor(.white)
+                        .foregroundColor(.lethosPrimary)
 
                     // Photo
                     VStack(alignment: .leading, spacing: 8) {
@@ -59,7 +59,7 @@ struct WeeklyCheckInView: View {
                         TextField("75.0", text: $weight)
                             .keyboardType(.decimalPad)
                             .font(LethoFont.body())
-                            .foregroundColor(.white)
+                            .foregroundColor(.lethosPrimary)
                             .padding(12)
                             .background(Color.lethosCard)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -70,7 +70,7 @@ struct WeeklyCheckInView: View {
                         TextField("3", text: $sessionsCompleted)
                             .keyboardType(.numberPad)
                             .font(LethoFont.body())
-                            .foregroundColor(.white)
+                            .foregroundColor(.lethosPrimary)
                             .padding(12)
                             .background(Color.lethosCard)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -86,7 +86,7 @@ struct WeeklyCheckInView: View {
                     fieldSection(title: "How do you feel?") {
                         TextField("Any notes...", text: $notes, axis: .vertical)
                             .font(LethoFont.body())
-                            .foregroundColor(.white)
+                            .foregroundColor(.lethosPrimary)
                             .lineLimit(3...6)
                             .padding(12)
                             .background(Color.lethosCard)
@@ -117,7 +117,6 @@ struct WeeklyCheckInView: View {
                 }
             }
         }
-        .preferredColorScheme(.dark)
         .onChange(of: photoItem) { _, newItem in
             Task {
                 if let data = try? await newItem?.loadTransferable(type: Data.self) {
@@ -142,7 +141,7 @@ struct WeeklyCheckInView: View {
             if let headline = result.headline {
                 Text(headline)
                     .font(LethoFont.headline(20))
-                    .foregroundColor(.white)
+                    .foregroundColor(.lethosPrimary)
             }
 
             if let changes = result.visibleChanges {
@@ -181,7 +180,7 @@ struct WeeklyCheckInView: View {
                 HStack {
                     Text("Progress: \(pct)%")
                         .font(.system(size: 16, weight: .bold))
-                        .foregroundColor(.white)
+                        .foregroundColor(.lethosPrimary)
                     Spacer()
                     if let weeks = result.estimatedWeeksRemaining {
                         Text("~\(weeks) weeks to go")

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -78,7 +78,7 @@
 		74718E9BA446F59F22CDF12E /* GoalPhysiqueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalPhysiqueView.swift; sourceTree = "<group>"; };
 		795F87E4943E98793BC2FA6F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8141EFFCB77F0672C6E2AF50 /* StepTickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTickerView.swift; sourceTree = "<group>"; };
-		842C47F9C34B19C1FA6E0205 /* Lethos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lethos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		842C47F9C34B19C1FA6E0205 /* Lethos.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Lethos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CFE6F7CC22954F23F2E6FB3 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		8FC26FA03B049D61737C4AAE /* ExpandableBuildCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableBuildCard.swift; sourceTree = "<group>"; };
 		90D61FBBF6536D2B80433D98 /* GlowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowCard.swift; sourceTree = "<group>"; };
@@ -293,6 +293,11 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					F802865FE83B86608594E2FE = {
+						DevelopmentTeam = "";
+					};
+				};
 			};
 			buildConfigurationList = BBA40E7B1F79E22563A98CA2 /* Build configuration list for PBXProject "Lethos" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -304,6 +309,7 @@
 			);
 			mainGroup = 5EE9AA7F7BAB2C24C62EF99D;
 			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -379,7 +385,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = SAW7947VW2;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Lethos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -522,7 +527,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = SAW7947VW2;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Lethos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

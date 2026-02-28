@@ -31,7 +31,6 @@ struct LethosApp: App {
                         }
                 }
             }
-            .preferredColorScheme(.dark)
             .alert("Error", isPresented: .constant(appViewModel.errorMessage != nil)) {
                 Button("OK") { appViewModel.errorMessage = nil }
             } message: {

@@ -130,7 +130,6 @@ struct OnboardingContainerView: View {
                 }
             }
         }
-        .preferredColorScheme(.dark)
     }
 
     // MARK: - Continue action

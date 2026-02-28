@@ -11,7 +11,7 @@ struct ProfileView: View {
             VStack(alignment: .leading, spacing: LethoSpacing.sectionSpacing) {
                 Text("Profile")
                     .font(LethoFont.headline(28))
-                    .foregroundColor(.white)
+                    .foregroundColor(.lethosPrimary)
                     .padding(.top, 20)
 
                 // Stats card
@@ -246,7 +246,7 @@ private struct StatItem: View {
         VStack(spacing: 4) {
             Text(value)
                 .font(.system(size: 18, weight: .bold))
-                .foregroundColor(.white)
+                .foregroundColor(.lethosPrimary)
             Text(label)
                 .font(LethoFont.body(12))
                 .foregroundColor(.lethosFinePrint)

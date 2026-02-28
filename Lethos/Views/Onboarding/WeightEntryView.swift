@@ -11,12 +11,12 @@ struct WeightEntryView: View {
 
             Text("What's your weight?")
                 .font(LethoFont.headline(28))
-                .foregroundColor(.white)
+                .foregroundColor(.lethosPrimary)
 
             HStack(alignment: .firstTextBaseline, spacing: 8) {
                 TextField(viewModel.useImperial ? "165" : "75", text: $displayValue)
                     .font(.system(size: 48, weight: .bold))
-                    .foregroundColor(.white)
+                    .foregroundColor(.lethosPrimary)
                     .keyboardType(.decimalPad)
                     .multilineTextAlignment(.center)
                     .focused($isFocused)

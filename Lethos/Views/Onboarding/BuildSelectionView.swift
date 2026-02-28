@@ -7,7 +7,7 @@ struct BuildSelectionView: View {
         VStack(spacing: 20) {
             Text("What's your build?")
                 .font(LethoFont.headline(28))
-                .foregroundColor(.white)
+                .foregroundColor(.lethosPrimary)
                 .padding(.top, 8)
 
             ScrollView {

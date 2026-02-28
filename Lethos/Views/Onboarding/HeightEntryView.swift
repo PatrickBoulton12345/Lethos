@@ -16,13 +16,13 @@ struct HeightEntryView: View {
 
             Text("What's your height?")
                 .font(LethoFont.headline(28))
-                .foregroundColor(.white)
+                .foregroundColor(.lethosPrimary)
 
             if viewModel.useImperial {
                 HStack(alignment: .firstTextBaseline, spacing: 8) {
                     TextField("5", text: $displayFeet)
                         .font(.system(size: 48, weight: .bold))
-                        .foregroundColor(.white)
+                        .foregroundColor(.lethosPrimary)
                         .keyboardType(.numberPad)
                         .multilineTextAlignment(.center)
                         .focused($feetFocused)
@@ -35,7 +35,7 @@ struct HeightEntryView: View {
 
                     TextField("9", text: $displayInches)
                         .font(.system(size: 48, weight: .bold))
-                        .foregroundColor(.white)
+                        .foregroundColor(.lethosPrimary)
                         .keyboardType(.numberPad)
                         .multilineTextAlignment(.center)
                         .focused($inchesFocused)
@@ -50,7 +50,7 @@ struct HeightEntryView: View {
                 HStack(alignment: .firstTextBaseline, spacing: 8) {
                     TextField("175", text: $displayCm)
                         .font(.system(size: 48, weight: .bold))
-                        .foregroundColor(.white)
+                        .foregroundColor(.lethosPrimary)
                         .keyboardType(.numberPad)
                         .multilineTextAlignment(.center)
                         .focused($cmFocused)

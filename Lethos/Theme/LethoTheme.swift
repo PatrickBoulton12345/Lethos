@@ -1,29 +1,67 @@
 import SwiftUI
+import UIKit
+
+// MARK: - UIColor hex helper
+
+extension UIColor {
+    convenience init(hex: String) {
+        let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
+        var int: UInt64 = 0
+        Scanner(string: hex).scanHexInt64(&int)
+        let r, g, b: UInt64
+        switch hex.count {
+        case 6:
+            (r, g, b) = (int >> 16, int >> 8 & 0xFF, int & 0xFF)
+        default:
+            (r, g, b) = (0, 0, 0)
+        }
+        self.init(
+            red: CGFloat(r) / 255,
+            green: CGFloat(g) / 255,
+            blue: CGFloat(b) / 255,
+            alpha: 1
+        )
+    }
+}
 
 // MARK: - Colors
 
 extension Color {
-    // Backgrounds
-    static let lethosBlack = Color(hex: "000000")
-    static let lethosCard = Color(hex: "1A1A1A")
-    static let lethosCardSelected = Color(hex: "0D1F17")
+    // Backgrounds — adaptive
+    static let lethosBlack = Color(UIColor { traits in
+        traits.userInterfaceStyle == .dark ? .black : .systemBackground
+    })
+    static let lethosCard = Color(UIColor { traits in
+        traits.userInterfaceStyle == .dark ? UIColor(hex: "1A1A1A") : .secondarySystemBackground
+    })
+    static let lethosCardSelected = Color(UIColor { traits in
+        traits.userInterfaceStyle == .dark ? UIColor(hex: "0D1F17") : UIColor(hex: "E8F8F0")
+    })
 
-    // Borders
-    static let lethosBorder = Color(hex: "2A2A2A")
+    // Borders — adaptive
+    static let lethosBorder = Color(UIColor { traits in
+        traits.userInterfaceStyle == .dark ? UIColor(hex: "2A2A2A") : UIColor(hex: "E0E0E0")
+    })
     static let lethosBorderSelected = Color(hex: "34D399")
 
-    // Greens
+    // Greens — brand colors, stay as-is
     static let lethosGreen = Color(hex: "22C55E")
     static let lethosGreenLight = Color(hex: "86EFAC")
     static let lethosGreenAccent = Color(hex: "34D399")
     static let lethosGreenDark = Color(hex: "166534")
 
-    // Text
-    static let lethosPrimary = Color.white
-    static let lethosSecondary = Color(hex: "A0A0A0")
-    static let lethosFinePrint = Color(hex: "666666")
+    // Text — adaptive
+    static let lethosPrimary = Color(UIColor { traits in
+        traits.userInterfaceStyle == .dark ? .white : .label
+    })
+    static let lethosSecondary = Color(UIColor { traits in
+        traits.userInterfaceStyle == .dark ? UIColor(hex: "A0A0A0") : UIColor(hex: "6B6B6B")
+    })
+    static let lethosFinePrint = Color(UIColor { traits in
+        traits.userInterfaceStyle == .dark ? UIColor(hex: "666666") : UIColor(hex: "8A8A8A")
+    })
 
-    // Onboarding step accent colors
+    // Onboarding step accent colors — brand, stay as-is
     static let onboardingTeal = Color(hex: "2DD4BF")
     static let onboardingBlue = Color(hex: "3B82F6")
     static let onboardingCyan = Color(hex: "06B6D4")

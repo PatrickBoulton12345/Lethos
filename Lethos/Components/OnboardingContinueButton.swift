@@ -20,10 +20,10 @@ struct OnboardingContinueButton: View {
                 Image(systemName: "arrow.right")
                     .font(.system(size: 15, weight: .bold))
             }
-            .foregroundColor(.black)
+            .foregroundColor(.lethosBlack)
             .frame(maxWidth: .infinity)
             .frame(height: 56)
-            .background(Color.white)
+            .background(Color.lethosPrimary)
             .clipShape(Capsule())
         }
         .disabled(!isEnabled)
